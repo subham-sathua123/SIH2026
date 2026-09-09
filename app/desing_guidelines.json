@@ -1,0 +1,109 @@
+{
+    "project_title": "Smart Farmer Procurement Slot Booking & Queue Management System (SIH 2026 SIH26032)",
+    "app_type": "hybrid_fullstack",
+    "archetype": "ORGANIC_EARTHY_GOVT_TRUST",
+    "hero_tagline": "Smart Procurement. Less Waiting. Better Service.",
+    "user_choices": {
+        "anti_ai_feel": true,
+        "language_support": [
+            "EN",
+            "HI"
+        ],
+        "roles": [
+            "Farmer",
+            "Procurement Centre Staff",
+            "Administrator"
+        ]
+    },
+    "typography": {
+        "headline_font": "Cabinet Grotesk, Outfit, sans-serif",
+        "body_font": "Plus Jakarta Sans, Noto Sans Devanagari, sans-serif",
+        "mono_font": "JetBrains Mono, monospace",
+        "banned_fonts": [
+            "Inter",
+            "Roboto",
+            "Space Grotesk",
+            "Open Sans"
+        ],
+        "hierarchy": {
+            "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight",
+            "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+            "h3_card": "text-xl sm:text-2xl font-semibold",
+            "h4_subcard": "text-lg font-medium",
+            "body": "text-base leading-relaxed",
+            "caption": "text-xs sm:text-sm font-medium tracking-wide uppercase"
+        }
+    },
+    "colors": {
+        "theme_type": "Light Theme Priority (Warm Organic Govt Palette)",
+        "palette": {
+            "primary_green": "#1E4620",
+            "primary_green_hover": "#163418",
+            "secondary_terracotta": "#B85B28",
+            "secondary_terracotta_hover": "#9E4C1F",
+            "accent_gold": "#D99B26",
+            "bg_sand": "#F7F5EE",
+            "surface_card": "#FFFFFF",
+            "surface_muted": "#EFECE1",
+            "border_earth": "#DDD8C7",
+            "text_main": "#1C241B",
+            "text_muted": "#526251",
+            "status_serving": "#15803D",
+            "status_waiting": "#B45309",
+            "status_completed": "#1E40AF",
+            "status_urgent": "#B91C1C"
+        },
+        "gradient_rule": "NO dark gradients or full-page saturated AI gradients. Use solid earth tones, crisp 1px borders (#DDD8C7), subtle layered shadows, and organic grain backgrounds."
+    },
+    "layout_and_grid": {
+        "spacing_philosophy": "Generous 2x-3x padding scale (p-6, p-8, p-12). Containers with borders must have internal padding.",
+        "bento_grid_mode": "Tetris Grid for Landing, High Density Grid for Staff & Admin Dashboards",
+        "header_nav": "Sticky header with glassmorphism backdrop-blur-md bg-[#F7F5EE]/90 border-b border-[#DDD8C7] z-50",
+        "footer": "Dark forest background (#163418) with massive typographic anchor, fast contact links, and govt helpline details"
+    },
+    "features_and_flows": {
+        "landing_page": {
+            "hero_section": "Bold headline ('Smart Procurement. Less Waiting. Better Service.'), Hindi toggle button (EN | हिंदी), dual CTA (Book Procurement Slot / Check Live Queue Status), quick status lookup widget.",
+            "features_grid": "3x3 asymmetrical bento displaying Real-time Queue, Multi-Commodity Slot Booking, Verification & Payment Timeline, Direct SMS Alerts.",
+            "live_stats_banner": "Live counters for Total Quintals Procured, Active Centres, Average Wait Time, Farmers Served Today."
+        },
+        "farmer_dashboard": {
+            "active_token_card": "Tactile high-contrast card showing Token No. (e.g., #TK-2026-8942), Centre Name, Allocated Date & Time, Assigned Bay.",
+            "live_queue_monitor": "Large numeric badge for Currently Serving Token, 'Farmers Ahead of You' live counter, Estimated Waiting Time (mins/hrs).",
+            "procurement_timeline_stepper": "Vertical 7-step tracker: 1. Slot Booked -> 2. Arrived at Centre -> 3. Token Verified -> 4. Moisture & Quality Check -> 5. Weighing Completed -> 6. Payment Sanctioned -> 7. Direct Bank Transfer (DBT) Paid.",
+            "slot_booking_wizard": "5-Step Wizard: 1. Select Procurement Centre (Map/District filter) -> 2. Choose Commodity (Wheat, Paddy, Gram, Mustard) -> 3. Select Date -> 4. Choose Time Slot Grid -> 5. Enter Quantity (Quintals) & Vehicle No. -> Confirmation Token Receipt PDF/Print."
+        },
+        "staff_dashboard": {
+            "today_overview": "4 KPI Cards: Queue Capacity, Tokens Called, Pending Weighments, Total Procured Today.",
+            "queue_control_panel": "Primary Action: 'Call Next Farmer' (sound chime toggle + SMS ping), Live Queue Table with quick status switches (Mark Arrived, Start Verification, Record Weight, Complete Slot, Escalate Issue).",
+            "weighbridge_entry_modal": "Fast numeric keypad input for Gross Weight, Tare Weight, Net Weight & Moisture % with auto MSP payout calculation."
+        },
+        "admin_dashboard": {
+            "analytics_charts": "Recharts visualising Procurement Volume by Commodity, District-wide Queue Efficiency, Daily Farmer Footfall, Payment Clearance Velocity.",
+            "centre_and_slot_management": "CRUD table for Centres, capacity sliders per slot, slot blackout days, MSP rates manager."
+        }
+    },
+    "component_guidelines": {
+        "ui_library": "Shadcn UI primitives with custom Tailwind classes in light earth palette",
+        "icons": "lucide-react icons exclusively",
+        "toasts": "Sonner (positioned top-right)",
+        "date_picker": "Shadcn Popover Calendar",
+        "selects_dropdowns": "Shadcn Select/Dropdown Menu (never native HTML selects)",
+        "buttons": "Pill or rounded-xl buttons with subtle hover lift (-translate-y-0.5) and crisp ring focus states",
+        "testing_data_testid": "MANDATORY. Every interactive button, input, link, tab, modal trigger, card, status badge, and stepper step MUST have data-testid in kebab-case."
+    },
+    "image_urls": {
+        "hero_farmer_harvest": "https://images.unsplash.com/photo-1639941798780-04529d362f9a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHxfYXdhdGFyfGVufDB8fHx8MTc4ODU5NjM5MQ&q=85",
+        "grain_sacks_mandi": "https://images.unsplash.com/photo-1709236550338-e2bcc3beee70?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxhZ3JpY3VsdHVyZSUyMGdyYWluJTIwbWFya2V0fGVufDB8fHx8MTc4ODU5NjM5N3ww&q=85",
+        "wheat_grain_close_up": "https://images.unsplash.com/photo-1645331465778-eb409d112198?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxhZ3JpY3VsdHVyZSUyMGdyYWluJTIwc2Fja3N8ZW58MHx8fHwxNzg4NTk2Mzk3fDA&q=85",
+        "farmer_field_book": "https://images.unsplash.com/photo-1709533350345-66095b4b2471?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBmYXJtZXJ8ZW58MHx8fHwxNzg4NTk2Mzkx&q=85"
+    },
+    "instructions_to_main_agent": [
+        "1. Read this design_guidelines.json file first before generating any UI.",
+        "2. Ensure all text and labels have complete English and Hindi translations toggleable via top navbar state.",
+        "3. Enforce strictly light earthy theme with deep green #1E4620, terracotta #B85B28, sand background #F7F5EE, and crisp white cards.",
+        "4. Ensure every button, input, tab, select, modal trigger, step item, and status element has a dedicated data-testid attribute.",
+        "5. Provide mock data for 5+ Procurement Centres, 10+ Farmers in Queue, 4 Commodities (Wheat, Paddy, Gram, Mustard) with MSP prices, and 7-stage Procurement Timeline.",
+        "6. Include interactive simulation controls on Staff Dashboard so clicking 'Call Next Token' actively updates the Farmer Queue state in real time."
+    ]
+}

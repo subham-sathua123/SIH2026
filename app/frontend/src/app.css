@@ -1,0 +1,39 @@
+/* App-level tweaks; base tokens live in index.css */
+.App {
+    min-height: 100vh;
+}
+
+/* Fade-in for route transitions */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fade-up {
+    animation: fadeUp 0.4s ease-out both;
+}
+
+@keyframes pulseRing {
+    0% {
+        box-shadow: 0 0 0 0 rgba(184, 91, 40, 0.35);
+    }
+
+    70% {
+        box-shadow: 0 0 0 12px rgba(184, 91, 40, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(184, 91, 40, 0);
+    }
+}
+
+.pulse-ring {
+    animation: pulseRing 2s infinite;
+}
